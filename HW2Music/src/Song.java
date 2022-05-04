@@ -1,6 +1,4 @@
-
 /**
- * 
  * @author Leon Lu
  * @version 1.0 5/3/2022
  * This class is used to store the title, artist, genre of a song
@@ -86,7 +84,7 @@ public class Song
 	}
 	
 	/**
-	 * @param genre The string that will be set as the Song object's genre
+	 * @param genre - The string that will be set as the Song object's genre
 	 */
 	public void setGenre(String genre)
 	{
@@ -94,9 +92,12 @@ public class Song
 	}
 	
 
-	public String toString()
+	/**
+	 * @return returnString - Return an String array containing song object's title, artist, and genre
+	 */
+	public String[] songString()
 	{
-		String returnString = this.title + ", " + this.artist + ", " + this.genre;
+		String[] returnString = {this.title, this.artist, this.genre};
 		return returnString;
 	}
 	
